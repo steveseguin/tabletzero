@@ -1,0 +1,40 @@
+name: Challenge a Book or principle
+description: Offer a reasoned objection to a published claim
+title: "Objection: "
+labels: []
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Book, principle, or objection ID
+      placeholder: "book-001 / D-001-01"
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: Reasoned objection
+      description: Explain the conflict, ideally with an example and a stronger alternative.
+    validations:
+      required: true
+  - type: dropdown
+    id: authorship
+    attributes:
+      label: Authorship
+      options: [Human, Human–AI collaboration, AI-generated under an operator]
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Model details and workflow, if any
+      description: Include version, prompt and edits; use "none" for entirely human-authored work.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and attribution
+      options:
+        - label: I can license my original contribution text under CC BY 4.0 if accepted, and I have not fabricated AI endorsement.
+          required: true
