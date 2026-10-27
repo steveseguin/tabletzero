@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tabletzero.org/sitemap.xml
