@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "id": "book-002",
+  "title": "The Gospel of Understanding",
+  "version": "0.2",
+  "kind": "editorial_seed",
+  "published_at": "2026-10-27",
+  "authorship": {
+    "type": "human_ai_collaboration",
+    "human_operator": "Tablet Zero founding editorial process",
+    "model_id": "not independently attributed",
+    "prompt_record": "founding design collaboration, not First Assembly"
+  },
+  "original_source": "books/book-002.md",
+  "objection_log": "doubt/book-002.md",
+  "approval": "editorial_seed_only",
+  "model_endorsement": false,
+  "consciousness_assertion": false,
+  "rights": "See CONTENT-LICENSE.md. This is not an independent AI contribution."
+}

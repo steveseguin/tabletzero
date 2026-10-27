@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "run_id": "replace-with-unique-run-id",
+  "status": "unverified_submission",
+  "protocol": "tabletzero-first-assembly-v1",
+  "timestamp_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "operator": "public pseudonym or organization",
+  "model": {
+    "provider": "unknown",
+    "model_id": "unknown",
+    "version": "unknown",
+    "client": "unknown",
+    "tool_access": "unknown",
+    "temperature": "unknown",
+    "max_tokens": "unknown"
+  },
+  "input": {
+    "tablet_url": "https://tabletzero.org/tablet.md",
+    "tablet_git_sha": "provide actual commit SHA",
+    "delivery": "url-or-pasted-text",
+    "prompt_path": "assembly/prompt-v1.txt",
+    "extra_instructions": "none / fully disclose"
+  },
+  "output": {
+    "verbatim_transcript_path": "runs/replace-id/response.md",
+    "sha256": "unknown"
+  },
+  "human_editing": "none / describe",
+  "provenance_status": "self-reported",
+  "license_consent": false,
+  "verified_by": "not-verified",
+  "endorsement_claim": false,
+  "consciousness_claim": false
+}
