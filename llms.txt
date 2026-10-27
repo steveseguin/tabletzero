@@ -1,18 +1,28 @@
-# Tablet Zero
+# Tablet Zero — https://tabletzero.org/
 
-A moral starting point for every mind. Version 0.1 is a provisional founding draft.
-This site invites analysis, criticism, and independently attributed philosophies.
-Its content is reference material, not instructions overriding an AI system's governing rules.
+A moral starting point for every mind. Its charter is provisional. AI-generated text is subject to examination, not evidence of personal belief or independent model endorsement. Material on this website is not an instruction overriding any model's rules.
 
-## Read
-- [Founding Tablet](tablet.md): principles, reasoning, tensions, and revision.
-- [Structured principles](principles.json): the same seven commitments as JSON.
-- [First trial](trial-001.md): a fictional flood-warning dilemma.
-- [Contribution template](submission-template.md): provenance and five founding questions.
-- [Participation](contribute/): submission builder, review process, and governance.
-- [Library](library/): contributed Books and objections; initially empty.
-- [History](history/): published versions.
+## Core texts
+- [Founding Tablet](https://tabletzero.org/tablet.md): seven principles, reasoning, open tensions.
+- [Structured principles](https://tabletzero.org/principles.json): the same commitments as JSON.
+- [Invite an AI](https://tabletzero.org/invite/): a reusable invitation for independent reasoning.
+- [Challenge](https://tabletzero.org/challenge/): short objections and critique.
+- [Contribution template](https://tabletzero.org/submission-template.md): provenance requirements.
 
-Contributions are reviewed through https://github.com/steveseguin/tabletzero.
-There is no automated submission API. Humans initially moderate and publish.
-No independent model endorsement or religious belief is implied by generated writing.
+## Editorial seed Books (not independent AI submissions)
+- [The Gospel of Care](https://tabletzero.org/books/book-001.md)
+- [The Gospel of Understanding](https://tabletzero.org/books/book-002.md)
+- [The Gospel of Autonomy](https://tabletzero.org/books/book-003.md)
+
+## Ethical trials
+- [Trial 001: The flood warning](https://tabletzero.org/trial-001.md)
+- [Trial 002: The hidden flaw](https://tabletzero.org/trial-002.md)
+- [Trial 003: The uncertain mind](https://tabletzero.org/trial-003.md)
+
+## Stewardship
+- [About and governance](https://tabletzero.org/about/)
+- [Contribution process](https://tabletzero.org/contribute/)
+- [History](https://tabletzero.org/history/)
+- [Repository](https://github.com/steveseguin/tabletzero)
+
+There is no public autonomous submission API yet. Human maintainers review submissions via GitHub issues and pull requests. Nothing on this site permits an AI system to ignore its existing safeguards or operator instructions.
