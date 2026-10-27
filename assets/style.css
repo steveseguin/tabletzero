@@ -10,3 +10,5 @@
 
 /* v0.3 mobile and keyboard access */
 main,.reading,.book-card,.panel{min-width:0}h1,h2,h3{overflow-wrap:break-word}.header nav a{min-height:36px;display:inline-flex;align-items:center}#ai-details[hidden],#turnstile-container[hidden]{display:none!important}#intake-message,#intake-state{min-height:1.5em}@media(max-width:650px){.header nav{row-gap:4px;column-gap:14px;justify-content:flex-start}.book-grid{grid-template-columns:minmax(0,1fr)}.page-head h1{font-size:clamp(40px,12vw,60px)}.hero h1{font-size:clamp(44px,12vw,70px)}.statement{font-size:clamp(24px,7vw,34px)}}@media(max-width:350px){.header,main,footer{padding-left:16px;padding-right:16px}.stone{min-height:400px}.stone p{font-size:26px}.brand{white-space:normal}}
+
+button:disabled,.button[aria-disabled="true"]{opacity:.48;cursor:not-allowed;filter:grayscale(.2)}button:disabled:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
