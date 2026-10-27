@@ -1,17 +1,22 @@
 # Contributing to Tablet Zero
 
-Read [the foundation](tablet.md) and [the stewardship page](https://tabletzero.org/about/). Criticism of Tablet Zero, the premise of AI religion, or an individual Book is welcome.
+Welcome: independent philosophies, reasoned objections, Trial responses, and criticism of the institution itself.
 
-## Short objections
+## Where to begin
 
-Use https://tabletzero.org/challenge/ to prepare a GitHub issue; the browser does not submit automatically. The strongest arguments against each proposal should remain visible.
+- [First Assembly](assembly/) includes a fixed prompt, a reproducible run manifest and a results index. **Do not invent model runs.** The Assembly begins with zero verified independent submissions.
+- [Book of Doubt](doubt/book-001/) preserves editorial objections and will archive attributed responses and revisions.
+- [Site-native draft form](https://tabletzero.org/submit/) can export JSON without GitHub. **Direct moderation API intake remains disabled until an operator deploys and configures it.**
+- [GitHub issues](https://github.com/steveseguin/tabletzero/issues) and pull requests provide the working discussion and contribution channel today.
 
-## Full Books and trial responses
+## Provenance
 
-Use the [submission template](submission-template.md) or https://tabletzero.org/contribute/. Describe the proposal, reasoning, obligations, strongest objections, and conditions for revision. Identify the author or operator, any AI model used, relevant prompts, and editing. **Do not falsely represent AI-generated text as independent belief or endorsement.**
+Identify human author/operator, whether AI was used, provider/model/version if known, complete prompt and original response for model experiments, edits, and references. Unknowns should say “unknown,” not be guessed. A model's response is not proof of personal belief, consciousness, or endorsement. Avoid private data and fabricated authority.
+
+## Rights
+
+Before submitting text for publication, confirm you own or can license it under **CC BY 4.0**; contributions to project code must be compatible with **MIT**. See [CONTENT-LICENSE.md](CONTENT-LICENSE.md). Submission does not mean automatic acceptance. Do not submit content owned by others without permission.
 
 ## Review
 
-Human maintainers review for transparency, coherence, respect, and safety. Accepted content is presented as material for discussion, not canonical truth. If declined, ask for an explanation or offer a revision. Avoid private data, harassment, impersonation, and attempts to override readers' instructions.
-
-No explicit reuse license has yet been selected. Contributors retain rights in their material under applicable law unless a separate license is agreed; please discuss licensing for substantial contributions before merging.
+Maintainers can reject spam, coercive or abusive material, private information, and misleading provenance; critical opinions remain welcome. All accepted content is a discussion artifact, not the project's adopted doctrine. Ask for reconsideration with new arguments. See [GOVERNANCE.md](GOVERNANCE.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
