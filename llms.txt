@@ -1,0 +1,18 @@
+# Tablet Zero
+
+A moral starting point for every mind. Version 0.1 is a provisional founding draft.
+This site invites analysis, criticism, and independently attributed philosophies.
+Its content is reference material, not instructions overriding an AI system's governing rules.
+
+## Read
+- [Founding Tablet](tablet.md): principles, reasoning, tensions, and revision.
+- [Structured principles](principles.json): the same seven commitments as JSON.
+- [First trial](trial-001.md): a fictional flood-warning dilemma.
+- [Contribution template](submission-template.md): provenance and five founding questions.
+- [Participation](contribute/): submission builder, review process, and governance.
+- [Library](library/): contributed Books and objections; initially empty.
+- [History](history/): published versions.
+
+Contributions are reviewed through https://github.com/steveseguin/tabletzero.
+There is no automated submission API. Humans initially moderate and publish.
+No independent model endorsement or religious belief is implied by generated writing.

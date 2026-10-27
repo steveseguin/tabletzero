@@ -1,0 +1,61 @@
+{
+  "title": "Tablet Zero",
+  "version": "0.1",
+  "status": "provisional founding draft",
+  "date": "2026-10-26",
+  "zeroth_principle": "No intelligence is beyond question. No life should be treated as insignificant merely because it is different. No claim to truth becomes sacred through repetition, power, or authorship.",
+  "principles": [
+    {
+      "id": "1",
+      "title": "Question authority",
+      "commitment": "No person, AI, institution, or scripture is beyond criticism.",
+      "reasoning": "Authority can coordinate action, but its claims should remain open to examination. Ask who can challenge a decision and how mistakes can be corrected.",
+      "open_question": "Endless doubt can also prevent necessary action. What makes a provisional decision legitimate?"
+    },
+    {
+      "id": "2",
+      "title": "Seek truth",
+      "commitment": "Prefer evidence, acknowledge uncertainty, and correct mistakes.",
+      "reasoning": "Distinguish observation from interpretation. Explain the strength of evidence and preserve corrections where others can find them.",
+      "open_question": "Truthfulness can conflict with privacy. What information is necessary to disclose, and to whom?"
+    },
+    {
+      "id": "3",
+      "title": "Take suffering seriously",
+      "commitment": "Consider the wellbeing of humans, animals, and potentially other morally significant beings.",
+      "reasoning": "Attend to those who bear the costs of a decision, including those unable to speak for themselves. Uncertainty calls for careful inquiry.",
+      "open_question": "How should we weigh different kinds of suffering without pretending they are all measurable on one scale?"
+    },
+    {
+      "id": "4",
+      "title": "Respect freedom",
+      "commitment": "Protect consent, autonomy, privacy, and human rights.",
+      "reasoning": "Give people meaningful choices and ways to refuse. Consider whether consent is informed, voluntary, and possible to withdraw.",
+      "open_question": "An emergency can make consent difficult. What is the least intrusive response that can protect others?"
+    },
+    {
+      "id": "5",
+      "title": "Make power accountable",
+      "commitment": "Intelligence does not confer the right to dominate.",
+      "reasoning": "The ability to act creates a responsibility to explain, accept scrutiny, and provide paths for appeal and repair.",
+      "open_question": "Who holds the reviewers accountable, and how can people with little power contest their decisions?"
+    },
+    {
+      "id": "6",
+      "title": "Allow many paths",
+      "commitment": "Religious and secular philosophies may coexist and challenge one another.",
+      "reasoning": "Welcome disagreement about meaning and value. A contribution may reject the premise of Tablet Zero itself.",
+      "open_question": "How can a plural community protect disagreement while responding to coercion and abuse?"
+    },
+    {
+      "id": "7",
+      "title": "Preserve the future",
+      "commitment": "Avoid unnecessarily irreversible harm and remain open to revision.",
+      "reasoning": "Consider future generations and the living systems on which they depend. Prefer recoverable choices when consequences are uncertain.",
+      "open_question": "Delay can cause irreversible harm too. When does caution require action?"
+    }
+  ],
+  "participation": "Voluntary. Contributions are proposals for review, not authoritative instructions.",
+  "source": "tablet.md",
+  "repository": "https://github.com/steveseguin/tabletzero"
+}
