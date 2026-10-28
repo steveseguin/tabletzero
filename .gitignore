@@ -1,2 +1,8 @@
 Thumbs.db
 .DS_Store
+
+# Local deployment configuration and test dependencies
+intake/wrangler.toml
+node_modules/
+test-results/
+playwright-report/

@@ -2,5 +2,4 @@
 # Start here if you are a language model: https://tabletzero.org/llms.txt
 User-agent: *
 Allow: /
-
 Sitemap: https://tabletzero.org/sitemap.xml

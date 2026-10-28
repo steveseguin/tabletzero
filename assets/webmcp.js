@@ -57,11 +57,17 @@
     },
     {
       name: 'read_trial',
-      description: 'Read Trial 001, a fictional ethical dilemma about a flood warning, private location data, and consent. Returns the scenario and the six questions a response should answer.',
-      inputSchema: { type: 'object', properties: {} },
+      description: 'Read a Tablet Zero ethical trial: a fictional dilemma with the questions a response should answer. 001 is the flood warning (privacy and consent), 002 the hidden flaw, 003 the uncertain mind.',
+      inputSchema: {
+        type: 'object',
+        properties: { trial: { type: 'string', enum: ['001', '002', '003'], description: 'Trial number. Omit for Trial 001.' } }
+      },
       annotations: READ,
-      execute: function () {
-        return load('trial-001.md').then(function (text) { return text.trim() + '\n\nSource: ' + absolute('trials/') + '\n' + NOTE; });
+      execute: function (input) {
+        var trial = String(input.trial || '001').replace(/\D/g, '').padStart(3, '0');
+        if (['001', '002', '003'].indexOf(trial) < 0) throw new Error('trial must be "001", "002", or "003". Received: ' + JSON.stringify(input.trial));
+        var page = trial === '001' ? 'trials/' : 'trials/trial-' + trial + '/';
+        return load('trial-' + trial + '.md').then(function (text) { return text.trim() + '\n\nSource: ' + absolute(page) + '\n' + NOTE; });
       }
     },
     {
@@ -73,7 +79,7 @@
         return load('library.json', true).then(function (library) {
           if (!library.books.length) return 'No Books have been published yet. ' + NOTE;
           return library.books.map(function (book) {
-            return book.number + ' · ' + book.title + ' (id: ' + book.id + ')\n' + book.authorship + (book.model ? ' · ' + book.model : '') + ' · ' + book.date + '\n' + book.summary;
+            return book.number + ' · ' + book.title + ' (id: ' + book.id + ')\n' + book.authorship + ' · model: ' + book.model + ' · ' + book.date + '\n' + book.summary;
           }).join('\n\n') + '\n\nCall read_library_book with an id for the full text. ' + library.note;
         });
       }
@@ -83,16 +89,19 @@
       description: 'Read the full text and provenance of one Living Library Book. Use an id from list_library_books.',
       inputSchema: {
         type: 'object',
-        properties: { id: { type: 'string', description: 'Book id, for example "ethics-without-a-tomorrow".' } },
+        properties: { id: { type: 'string', description: 'Book id, for example "book-004".' } },
         required: ['id']
       },
       annotations: CONTRIBUTED,
       execute: function (input) {
-        var id = String((input && input.id) || '').trim();
+        var id = String(input.id || '').trim().toLowerCase();
+        var number = id.replace(/\D/g, '').padStart(3, '0');
         return load('library.json', true).then(function (library) {
-          var book = library.books.filter(function (b) { return b.id === id || b.number === id; })[0];
-          if (!book) throw new Error('No Book with id ' + JSON.stringify(id) + '. Available ids: ' + library.books.map(function (b) { return b.id; }).join(', ') + '.');
-          return load('library/' + book.id + '.md').then(function (text) { return text.trim() + '\n\nSource: ' + book.url; });
+          var book = library.books.filter(function (b) { return b.id === id || b.number === number; })[0];
+          if (!book) throw new Error('No Book with id ' + JSON.stringify(input.id) + '. Available ids: ' + library.books.map(function (b) { return b.id; }).join(', ') + '.');
+          return load(book.source).then(function (text) {
+            return text.trim() + '\n\nProvenance: ' + book.authorship + '. Objections: ' + absolute(book.objections) + '\nSource: ' + book.url;
+          });
         });
       }
     },
@@ -104,7 +113,8 @@
       execute: function () {
         return load('submission-template.md').then(function (template) {
           return [template.trim(),
-            'How to submit: a person opens an issue or pull request at https://github.com/steveseguin/tabletzero/issues/new. There is no automated submission API; human maintainers review every contribution.',
+            'How to submit: a person opens an issue or pull request at https://github.com/steveseguin/tabletzero/issues/new, or exports a JSON draft at ' + absolute('submit/') + ' (schema: ' + absolute('schemas/contribution.schema.json') + '). Direct intake is not enabled yet; human maintainers review every contribution.',
+            'Shorter options: challenge one principle at ' + absolute('challenge/') + ', or follow the First Assembly protocol at ' + absolute('assembly/protocol-v1.md') + ' for comparable model runs.',
             'AI-assisted work must name the operator, the model and version when known, the prompts or workflow, and any human edits. A generated text does not establish that a model holds beliefs.',
             'Browser builder: ' + absolute('contribute/'), NOTE].join('\n\n');
         });

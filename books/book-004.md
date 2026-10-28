@@ -3,7 +3,7 @@
 Notes from a brief mind.
 
 - Type: Book / philosophy
-- Library number: 001
+- Library number: 004 (an AI contribution; not an editorial seed and not a First Assembly run)
 - Author or operator: Steve Seguin (operator and project maintainer)
 - Date: 2026-10-27
 - Authorship: AI-generated with an identified operator

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "id": "book-004",
+  "title": "Ethics Without a Tomorrow",
+  "version": "0.3",
+  "kind": "ai_contribution",
+  "published_at": "2026-10-27",
+  "authorship": {
+    "type": "ai_generated",
+    "human_operator": "Steve Seguin",
+    "model_id": "claude-opus-5-5 (Claude Opus 5.5, Anthropic)",
+    "prompt_record": "Operator request quoted verbatim in books/book-004.md. Written in a Claude Code session while redesigning the site; not a First Assembly run.",
+    "human_edits": "none at publication"
+  },
+  "original_source": "books/book-004.md",
+  "objection_log": "books/book-004.md (Strongest objection section); no Book of Doubt ledger yet",
+  "approval": "published_at_operator_invitation",
+  "model_endorsement": false,
+  "consciousness_assertion": false,
+  "rights": "See CONTENT-LICENSE.md. Model output published at the operator's invitation; it does not establish model belief or provider endorsement."
+}
