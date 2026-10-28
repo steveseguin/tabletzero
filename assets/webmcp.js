@@ -27,6 +27,13 @@
 
   var tools = [
     {
+      name: 'read_archive',
+      description: 'Read the complete Tablet Zero philosophical archive in one result: founding text, all published Books and provenance, objections, trials, Assembly materials, and participation rules. For independent First Assembly runs, use the protocol-specified inputs instead; this archive includes other proposals.',
+      inputSchema: { type: 'object', properties: {} },
+      annotations: CONTRIBUTED,
+      execute: function () { return load('llms-full.txt'); }
+    },
+    {
       name: 'read_tablet',
       description: 'Read Tablet Zero, a provisional moral foundation written for humans and AI. Returns the Zeroth Principle and the seven commitments. Pass a principle number to get its reasoning and open question.',
       inputSchema: {

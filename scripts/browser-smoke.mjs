@@ -21,6 +21,7 @@ await page.locator('[name="title"]').fill('Test philosophy');await page.locator(
 const download=page.waitForEvent('download');await page.locator('#export-json').click();if((await download).suggestedFilename()!=='tabletzero-contribution.json')fail.push('JSON export missing');
 await page.goto(base+'/library/ethics-without-a-tomorrow/');await page.waitForURL(base+'/library/book-004/');
 const oldSource=await page.request.get(base+'/library/ethics-without-a-tomorrow.md');if(!oldSource.ok()||!(await oldSource.text()).includes('https://tabletzero.org/books/book-004.md'))fail.push('Previous Book Markdown URL missing');
+for(const file of ['llms.txt','llms-full.txt','AGENTS.md','CLAUDE.md']){const response=await page.request.get(base+'/'+file);if(!response.ok())fail.push(file+' not readable');const text=await response.text();if(file==='llms-full.txt'&&!text.trimEnd().endsWith('END OF TABLET ZERO FULL TEXT'))fail.push('Full-text edition incomplete')}
 }
 await context.close();
 }

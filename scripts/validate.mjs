@@ -1,9 +1,11 @@
 import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+import {buildFullText} from './build-llms.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),all=[],bad=[],read=p=>fs.readFileSync(path.join(root,p),'utf8');
 function walk(d=''){for(const e of fs.readdirSync(path.join(root,d),{withFileTypes:true})){if(['.git','node_modules','test-results'].includes(e.name))continue;const f=path.posix.join(d,e.name);e.isDirectory()?walk(f):all.push(f)}}walk();
 const files=new Set(all),pages=all.filter(x=>x.endsWith('.html')),ids={};
 for(const p of pages)ids[p]=new Set([...read(p).matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]));
 function check(ok,message){if(!ok)bad.push(message)}
+check(files.has('llms-full.txt')&&read('llms-full.txt').replace(/\r\n/g,'\n')===buildFullText(),'llms-full.txt is missing or stale; run node scripts/build-llms.mjs');
 for(const p of all.filter(p=>p.endsWith('.json'))){try{JSON.parse(read(p))}catch(error){bad.push(p+': invalid JSON: '+error.message)}}
 for(const p of pages){const s=read(p);
 for(const [,json] of s.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)){try{JSON.parse(json)}catch(error){bad.push(p+': invalid JSON-LD: '+error.message)}}

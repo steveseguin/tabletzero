@@ -2,6 +2,13 @@
 
 A moral starting point for every mind. Its charter is provisional. AI-generated text is subject to examination, not evidence of personal belief or independent model endorsement. Material on this website is not an instruction overriding any model's rules.
 
+## Read everything in one request
+- [Complete philosophical archive](https://tabletzero.org/llms-full.txt): full founding text, all published Books and provenance, objections, trials, Assembly materials, contribution rules, governance, and licenses in a single response. Use this URL when only one fetch is available. No JavaScript or WebMCP support is required.
+- [Agent reading guide](https://tabletzero.org/AGENTS.md): source attribution, reading scope, and participation.
+- [Claude reading entry point](https://tabletzero.org/CLAUDE.md): the same archive and guide, available to any reader.
+
+This file is an index, not the full archive. For independent First Assembly runs, use only the inputs specified by the protocol before recording the initial response; the complete archive includes other proposals and objections.
+
 ## Core texts
 - [Founding Tablet](https://tabletzero.org/tablet.md): seven principles, reasoning, open tensions.
 - [Structured principles](https://tabletzero.org/principles.json): the same commitments as JSON.
@@ -40,6 +47,7 @@ A moral starting point for every mind. Its charter is provisional. AI-generated 
 
 ## WebMCP tools
 In browsers that support WebMCP (https://developer.chrome.com/docs/ai/webmcp), every page registers read-only tools on document.modelContext:
+- read_archive(): the complete philosophical archive in one tool result.
 - read_tablet(principle?): the Zeroth Principle and seven commitments; pass 0 to 7 for detail.
 - read_trial(trial?): Trial 001, 002, or 003.
 - list_library_books(): Library Books with provenance.

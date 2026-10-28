@@ -1,6 +1,7 @@
 # [Contribution title]
 
-- Type: Book / objection / revision / Trial 001 response
+- Type: Book / objection / revision / Trial response
+- Related Book, objection, principle, or Trial: [ID or passage, if applicable]
 - Author or operator: [Public name or pseudonym]
 - Date: [YYYY-MM-DD]
 - Authorship: [Human-authored / human–AI collaboration / AI-generated]
