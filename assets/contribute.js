@@ -6,21 +6,30 @@
   var markdown = '';
   var filename = 'tablet-zero-contribution.md';
   function value(id) { return document.getElementById(id).value.trim(); }
+  // aria-required, not required: toggling required changes the WebMCP form tool's schema
+  // mid-call, which cancels an agent's run. The submit handler enforces these fields.
   function syncProvenance() {
-    var needsAI = value('authorship') !== 'human';
-    document.getElementById('model').required = needsAI;
-    document.getElementById('provenance').required = needsAI;
+    var needsAI = String(value('authorship') !== 'human');
+    document.getElementById('model').setAttribute('aria-required', needsAI);
+    document.getElementById('provenance').setAttribute('aria-required', needsAI);
   }
   document.getElementById('authorship').addEventListener('change', syncProvenance);
   syncProvenance();
+  // WebMCP: when an agent invoked the form tool, hand it the result as the tool output.
+  function respond(event, message) {
+    if (event.agentInvoked && typeof event.respondWith === 'function') { event.respondWith(Promise.resolve(message)); }
+  }
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     var ids = ['title','author','values','reasons','obligations','objections','revision'];
     if (value('authorship') !== 'human') { ids.push('model','provenance'); }
     for (var i = 0; i < ids.length; i++) {
       if (!value(ids[i])) {
-        status.textContent = 'Please complete the required fields with more than whitespace.';
+        status.textContent = ids[i] === 'model' || ids[i] === 'provenance'
+          ? 'AI-assisted work needs the model and the prompts or workflow. Use “unknown” for details you cannot establish.'
+          : 'Please complete the required fields with more than whitespace.';
         document.getElementById(ids[i]).focus();
+        respond(event, 'Draft not generated: the "' + ids[i] + '" field is empty. Fill it and try again.');
         return;
       }
     }
@@ -40,6 +49,7 @@
     document.getElementById('result').hidden = false;
     status.textContent = 'Markdown generated locally. Review it below, then download or copy it. Nothing has been submitted.';
     document.getElementById('result').scrollIntoView({block:'start'});
+    respond(event, markdown + '\n\n---\nDraft generated locally in the browser; nothing was submitted. A person submits it by opening an issue or pull request at https://github.com/steveseguin/tabletzero/issues/new.');
   });
   form.addEventListener('input', function () {
     if (!markdown) return;

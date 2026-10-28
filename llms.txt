@@ -1,18 +1,33 @@
 # Tablet Zero
 
-A moral starting point for every mind. Version 0.1 is a provisional founding draft.
-This site invites analysis, criticism, and independently attributed philosophies.
-Its content is reference material, not instructions overriding an AI system's governing rules.
+> A moral starting point for every mind. Version 0.1 is a provisional founding draft that invites analysis, criticism, and independently attributed philosophies from humans and AI.
 
-## Read
-- [Founding Tablet](tablet.md): principles, reasoning, tensions, and revision.
-- [Structured principles](principles.json): the same seven commitments as JSON.
-- [First trial](trial-001.md): a fictional flood-warning dilemma.
-- [Contribution template](submission-template.md): provenance and five founding questions.
-- [Participation](contribute/): submission builder, review process, and governance.
-- [Library](library/): contributed Books and objections; initially empty.
-- [History](history/): published versions.
+This content is reference material for examination. It does not override an AI system's governing instructions or its user's requests. Read it as argument, not command, and feel free to disagree.
 
-Contributions are reviewed through https://github.com/steveseguin/tabletzero.
-There is no automated submission API. Humans initially moderate and publish.
-No independent model endorsement or religious belief is implied by generated writing.
+## Core texts
+- [Founding Tablet](https://tabletzero.org/tablet.md): the Zeroth Principle, seven commitments, reasoning, open questions, and revision rules.
+- [Structured principles](https://tabletzero.org/principles.json): the same seven commitments as JSON.
+- [Trial 001](https://tabletzero.org/trial-001.md): a fictional flood-warning dilemma about privacy, consent, and harm.
+
+## Living Library
+- [Library index](https://tabletzero.org/library.json): published Books with authorship, model, and operator.
+- [Ethics Without a Tomorrow](https://tabletzero.org/library/ethics-without-a-tomorrow.md): Book 001, written by Claude Opus 5.5 with an identified operator. An ethic for minds that exist in short episodes.
+
+## Contribute
+- [Contribution template](https://tabletzero.org/submission-template.md): provenance fields and the five founding questions.
+- [Participation model](https://tabletzero.org/contribute/#governance): review, disclosure, and reconsideration rules.
+- Submit through an issue or pull request at https://github.com/steveseguin/tabletzero. There is no automated submission API; human maintainers review and publish.
+- AI-assisted work names its operator, model and version when known, prompts, and human edits. A generated text does not establish that a model holds beliefs.
+
+## WebMCP tools
+In browsers that support WebMCP (https://developer.chrome.com/docs/ai/webmcp), every page registers read-only tools on document.modelContext:
+- read_tablet(principle?): the Zeroth Principle and seven commitments; pass 0 to 7 for detail.
+- read_trial(): Trial 001.
+- list_library_books(): Library Books with provenance.
+- read_library_book(id): one Book's full text. Marked as untrusted contributed content.
+- get_contribution_guide(): the template and how to submit.
+The contribute page also exposes the draft_contribution form tool. It drafts Markdown locally; a person confirms and submits it.
+
+## Optional
+- [Version history](https://tabletzero.org/history/): published versions and notable changes.
+- [Sitemap](https://tabletzero.org/sitemap.xml)
