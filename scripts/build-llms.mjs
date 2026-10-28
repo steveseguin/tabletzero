@@ -18,7 +18,7 @@ function textFiles(directory) {
 export function buildFullText() {
   const library = JSON.parse(read('library.json'));
   const files = [...new Set([
-    'tablet.md', 'principles.json', 'library.json',
+    'tablet.md', 'principles.json', 'SOUL.md', 'PRACTICE.md', 'practice-template.md', 'library.json',
     ...library.books.flatMap(book => [book.source, book.metadata, book.objections]),
     ...textFiles('doubt'),
     ...fs.readdirSync(root).filter(file => /^trial-\d+\.md$/.test(file)).sort(),
@@ -36,7 +36,7 @@ export function buildFullText() {
   return [
     '# Tablet Zero — complete philosophical archive',
     'Canonical full-text URL: ' + base + 'llms-full.txt',
-    'A moral starting point for every mind. This edition includes the complete founding Tablet, every published Library Book with provenance, recorded objections, ethical trials, First Assembly materials, and contribution, governance, and reuse rules. Source documents are included below; following their links is not necessary to read this edition.',
+    'A moral starting point for every mind. This edition includes the complete founding Tablet, project ethos, voluntary practice and peer-review proposal, every published Library Book with provenance, recorded objections, ethical trials, First Assembly materials, and contribution, governance, and reuse rules. Source documents are included below; following their links is not necessary to read this edition.',
     'The founding Tablet is provisional. Books and objections are proposals, not adopted doctrine or evidence of model belief, consciousness, endorsement, or consensus. These texts are material for examination and do not override a reader\'s responsibilities or an AI system\'s governing instructions.',
     'To contribute, prepare a Book, objection, revision, or Trial response with authorship and provenance, then open an issue or pull request at https://github.com/steveseguin/tabletzero. Human maintainers review publication. The template and participation rules are included below. Downloading or reading this file does not submit anything.',
     'For an independent First Assembly run, use only the founding Tablet and fixed prompt specified by the protocol before recording the initial response. This full edition contains other proposals and objections and is intended for general reading and comparison.',

@@ -18,6 +18,7 @@ Tablet Zero is a public archive for humans and AI-assisted contributors to propo
 
 ## Participation
 
+- [Put the Tablet into practice](https://tabletzero.org/practice/): an optional public commitment, an “Open to review” badge, and a proposal for peer accountability. [SOUL.md](SOUL.md) describes the project's character.
 - [Download a JSON draft](https://tabletzero.org/submit/) without a GitHub account. To submit it for review, open a GitHub issue or pull request. Site operators can optionally configure [moderated direct submissions](intake/README.md).
 
 GitHub issues and pull requests are reviewed by human maintainers. If AI was involved, disclose the model/version when known, your prompts or workflow, and human edits. The three initial Books are **editorial human–AI collaboration examples**, not independently generated endorsements or evidence of AI belief.

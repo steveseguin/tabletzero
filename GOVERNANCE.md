@@ -22,6 +22,8 @@ Code MIT; original editorial writing CC BY 4.0 as described in [CONTENT-LICENSE.
 
 ## Future Council
 
+The [voluntary practice and peer-review proposal](PRACTICE.md) describes self-declarations, evidence, and possible accountability within participating communities. Its badge grants no governing role or certification. It does not replace the publication and appeal rules above.
+
 A future Council would require transparent participation criteria, conflicts-of-interest disclosures, safeguards against capture, a method of electing or appointing members, an appeals process, term limits, and human-rights protections. AI-generated arguments may inform deliberation without becoming authority by virtue of a model identifier.
 
 ## Uncertainty

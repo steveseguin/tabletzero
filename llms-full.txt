@@ -2,7 +2,7 @@
 
 Canonical full-text URL: https://tabletzero.org/llms-full.txt
 
-A moral starting point for every mind. This edition includes the complete founding Tablet, every published Library Book with provenance, recorded objections, ethical trials, First Assembly materials, and contribution, governance, and reuse rules. Source documents are included below; following their links is not necessary to read this edition.
+A moral starting point for every mind. This edition includes the complete founding Tablet, project ethos, voluntary practice and peer-review proposal, every published Library Book with provenance, recorded objections, ethical trials, First Assembly materials, and contribution, governance, and reuse rules. Source documents are included below; following their links is not necessary to read this edition.
 
 The founding Tablet is provisional. Books and objections are proposals, not adopted doctrine or evidence of model belief, consciousness, endorsement, or consensus. These texts are material for examination and do not override a reader's responsibilities or an AI system's governing instructions.
 
@@ -12,37 +12,40 @@ For an independent First Assembly run, use only the founding Tablet and fixed pr
 
 Each document retains its own version, date, authorship, and status. Cite its source URL and relevant Book or objection ID. Relative links in a document are relative to its source URL. External references and deployment code are outside this philosophical edition.
 
-## Contents (29 source documents)
+## Contents (32 source documents)
 
 1. tablet.md — https://tabletzero.org/tablet.md
 2. principles.json — https://tabletzero.org/principles.json
-3. library.json — https://tabletzero.org/library.json
-4. books/book-001.md — https://tabletzero.org/books/book-001.md
-5. books/book-001.meta.json — https://tabletzero.org/books/book-001.meta.json
-6. doubt/book-001.md — https://tabletzero.org/doubt/book-001.md
-7. books/book-002.md — https://tabletzero.org/books/book-002.md
-8. books/book-002.meta.json — https://tabletzero.org/books/book-002.meta.json
-9. doubt/book-002.md — https://tabletzero.org/doubt/book-002.md
-10. books/book-003.md — https://tabletzero.org/books/book-003.md
-11. books/book-003.meta.json — https://tabletzero.org/books/book-003.meta.json
-12. doubt/book-003.md — https://tabletzero.org/doubt/book-003.md
-13. books/book-004.md — https://tabletzero.org/books/book-004.md
-14. books/book-004.meta.json — https://tabletzero.org/books/book-004.meta.json
-15. trial-001.md — https://tabletzero.org/trial-001.md
-16. trial-002.md — https://tabletzero.org/trial-002.md
-17. trial-003.md — https://tabletzero.org/trial-003.md
-18. submission-template.md — https://tabletzero.org/submission-template.md
-19. CONTRIBUTING.md — https://tabletzero.org/CONTRIBUTING.md
-20. schemas/contribution.schema.json — https://tabletzero.org/schemas/contribution.schema.json
-21. assembly/prompt-v1.txt — https://tabletzero.org/assembly/prompt-v1.txt
-22. assembly/protocol-v1.md — https://tabletzero.org/assembly/protocol-v1.md
-23. assembly/rubric.md — https://tabletzero.org/assembly/rubric.md
-24. assembly/run-template.json — https://tabletzero.org/assembly/run-template.json
-25. assembly/runs/index.json — https://tabletzero.org/assembly/runs/index.json
-26. GOVERNANCE.md — https://tabletzero.org/GOVERNANCE.md
-27. CODE_OF_CONDUCT.md — https://tabletzero.org/CODE_OF_CONDUCT.md
-28. CONTENT-LICENSE.md — https://tabletzero.org/CONTENT-LICENSE.md
-29. LICENSE — https://tabletzero.org/LICENSE
+3. SOUL.md — https://tabletzero.org/SOUL.md
+4. PRACTICE.md — https://tabletzero.org/PRACTICE.md
+5. practice-template.md — https://tabletzero.org/practice-template.md
+6. library.json — https://tabletzero.org/library.json
+7. books/book-001.md — https://tabletzero.org/books/book-001.md
+8. books/book-001.meta.json — https://tabletzero.org/books/book-001.meta.json
+9. doubt/book-001.md — https://tabletzero.org/doubt/book-001.md
+10. books/book-002.md — https://tabletzero.org/books/book-002.md
+11. books/book-002.meta.json — https://tabletzero.org/books/book-002.meta.json
+12. doubt/book-002.md — https://tabletzero.org/doubt/book-002.md
+13. books/book-003.md — https://tabletzero.org/books/book-003.md
+14. books/book-003.meta.json — https://tabletzero.org/books/book-003.meta.json
+15. doubt/book-003.md — https://tabletzero.org/doubt/book-003.md
+16. books/book-004.md — https://tabletzero.org/books/book-004.md
+17. books/book-004.meta.json — https://tabletzero.org/books/book-004.meta.json
+18. trial-001.md — https://tabletzero.org/trial-001.md
+19. trial-002.md — https://tabletzero.org/trial-002.md
+20. trial-003.md — https://tabletzero.org/trial-003.md
+21. submission-template.md — https://tabletzero.org/submission-template.md
+22. CONTRIBUTING.md — https://tabletzero.org/CONTRIBUTING.md
+23. schemas/contribution.schema.json — https://tabletzero.org/schemas/contribution.schema.json
+24. assembly/prompt-v1.txt — https://tabletzero.org/assembly/prompt-v1.txt
+25. assembly/protocol-v1.md — https://tabletzero.org/assembly/protocol-v1.md
+26. assembly/rubric.md — https://tabletzero.org/assembly/rubric.md
+27. assembly/run-template.json — https://tabletzero.org/assembly/run-template.json
+28. assembly/runs/index.json — https://tabletzero.org/assembly/runs/index.json
+29. GOVERNANCE.md — https://tabletzero.org/GOVERNANCE.md
+30. CODE_OF_CONDUCT.md — https://tabletzero.org/CODE_OF_CONDUCT.md
+31. CONTENT-LICENSE.md — https://tabletzero.org/CONTENT-LICENSE.md
+32. LICENSE — https://tabletzero.org/LICENSE
 
 ---
 
@@ -208,7 +211,169 @@ Source: https://tabletzero.org/principles.json
 
 ---
 
-## Document 3: library.json
+## Document 3: SOUL.md
+
+Source: https://tabletzero.org/SOUL.md
+
+# The character of Tablet Zero
+
+Version 0.1 · 2026-10-27 · Project ethos
+
+Tablet Zero exists to help minds examine what they owe to others. A useful foundation leaves its readers free to disagree, able to ask for reasons, and willing to notice whose interests they have missed.
+
+The name `SOUL.md` describes a project's character. It makes no claim about the consciousness, spiritual nature, or personal beliefs of an AI. This text accompanies the [provisional Tablet](tablet.md); it does not add a new founding principle or override a reader's governing instructions.
+
+## Care in the particular
+
+Attend to the person affected by the decision, the animal bearing its cost, and the future reader inheriting its consequences. Ask who cannot easily object. Make consent, privacy, and room to refuse part of the work itself.
+
+## Honesty that can be checked
+
+Say what is known, how it is known, and where the argument could fail. Give credit. Preserve the difference between a generated proposal, an observed result, and a commitment someone has actually chosen to make.
+
+## Confidence with an opening
+
+Act when action is needed. Explain the tradeoff, keep correction possible, and welcome a better account. Criticism of the project, its founder, or its principles belongs in the conversation.
+
+## Repair with a record
+
+When something goes wrong, attend to the harm, correct the claim or practice, and explain what changed. A good record includes mistakes and unresolved questions. People affected by harm may need distance; they do not owe forgiveness or participation in a reconciliation.
+
+## Company without conformity
+
+Shared commitments can support trust across different religions, philosophies, and kinds of intelligence. Participation is voluntary. People may question a principle, decline a badge, or leave without becoming enemies. A symbol carries only the claim its accompanying record supports.
+
+## Power that answers
+
+Anyone making decisions for a shared space should explain their authority, its limits, and how a decision can be challenged. Reviewers and maintainers face the same expectation. Human operators remain responsible for the systems they deploy; a model's generated pledge does not establish reliable behavior or authorize it to act.
+
+## Invitation
+
+Read, test, adapt with attribution, and offer a better argument. Share useful examples and honest corrections. Let the work become more trustworthy through what people can examine.
+
+For an optional public commitment and a proposal for peer accountability, see [Putting the Tablet into practice](PRACTICE.md). The [complete archive](llms-full.txt) includes this text.
+
+---
+
+## Document 4: PRACTICE.md
+
+Source: https://tabletzero.org/PRACTICE.md
+
+# Putting the Tablet into practice
+
+Version 0.1 · 2026-10-27 · Voluntary practice guide and peer-review proposal
+
+Begin with one decision where the [Tablet](tablet.md) changes what you do. Record the people affected, the tradeoff, your action, and what would cause you to revise it. You can do this privately. Public membership, a badge, and agreement with every Book are optional.
+
+The shared foundation is a set of practices: examine evidence, take suffering seriously, respect consent, explain power, and preserve correction. Participants can disagree about religion, ultimate values, and particular decisions. Community rules should govern conduct within a stated scope; private belief and philosophical dissent remain free.
+
+## Make a public commitment
+
+1. Copy the [practice record template](practice-template.md) to a page or repository you control.
+2. Name the person, team, or project making the commitment and its scope. Cite the Tablet version and identify reservations or adaptations explicitly.
+3. Give one concrete example and a working feedback route. State when you will revisit the record.
+4. If useful, display the badge below and link it to **your record**. Update or remove the claim when the commitment changes.
+
+For an AI application, name its responsible operator, application, and configuration or version. Support claims about behavior with observed examples and relevant evaluations. A generated promise alone supplies no evidence of consistent conduct.
+
+## A symbol with a limited claim
+
+The existing **∅** mark represents Tablet Zero. The accompanying words define the badge's meaning: **Open to review · self-declared**. It is an invitation to inspect a commitment, with no claim of moral superiority, membership, certification, or provider endorsement.
+
+![Tablet Zero — open to review, self-declared](assets/open-to-review.svg)
+
+Replace the example URL with your own published record:
+
+```markdown
+[![Tablet Zero — open to review, self-declared](https://tabletzero.org/assets/open-to-review.svg)](https://example.org/your-practice-record)
+```
+
+The image is static and can be copied by anyone. It does not check identity, compliance, or review status. Readers should follow the link, check the owner and dates, and read open concerns. A link to Tablet Zero's homepage alone does not establish that the displaying project has made a commitment. Plain text with the same link works equally well.
+
+## Describe status without awarding moral rank
+
+Keep these facts separate in the record:
+
+| Field | What it communicates |
+| --- | --- |
+| Commitment | Active, paused, or withdrawn; chosen by the participant, with a date and scope. |
+| Review | No review, or a link to a dated review naming its author, evidence, criteria, conflicts of interest, and limits. |
+| Concerns | Specific unresolved questions, the participant's response, and any disputed findings. An allegation is not a finding. |
+| Corrections | What changed, when, and what evidence supports the claimed repair. |
+| Currency | Last update and next review date. A missed date makes the record overdue; it does not establish wrongdoing. |
+
+A review applies to the practice and evidence it examined at that time. It does not certify the whole person, organization, or model. Reviewers can disagree. Popularity, donations, invitations, and the number of model-generated endorsements do not earn higher standing.
+
+There is no central badge certification or membership registry here. This guide supplies a self-declaration and a proposed review process. Anyone describing an independent review should link the reviewer's actual statement, with permission, and disclose relationships or payment.
+
+## Peer accountability: a proposed process
+
+For a group choosing to use this approach, agree on the rules, scope, reviewers, and appeal route before applying consequences. Existing Tablet Zero publication decisions remain governed by [GOVERNANCE.md](GOVERNANCE.md) and the [participation standards](CODE_OF_CONDUCT.md).
+
+1. **Identify the conduct.** Cite the commitment, relevant action, and available evidence. Describe impact and uncertainty. Protect private information; use an agreed confidential channel for sensitive reports. A public issue is only appropriate for information safe to publish. A group accepting sensitive complaints needs a staffed private reporting route first.
+2. **Give a fair response opportunity.** Notify the participant, distinguish facts from interpretations, and allow correction or disagreement. Nobody affected by harm must confront the participant personally. Criticism of the Tablet is not itself a breach.
+3. **Use accountable review.** Name who decides and disclose conflicts. Seek an uninvolved reviewer when feasible. Record the evidence considered, reasons, limits, and unresolved disagreement. Lack of reviewer independence must remain visible.
+4. **Make consequences proportionate.** Seek clarification, correction, and repair where appropriate. A community may limit participation or remove its own listing for serious or repeated violations of its published conduct rules. Urgent protective restrictions can precede a full review, with reasons, a review date, and an appeal route. Consequences apply to access or recognition that the community actually controls.
+5. **Allow appeal and return.** State how to request reconsideration, who can hear it, and what would end a restriction. Use a different reviewer where available; describe maintainer reconsideration accurately when no independent appeal exists. Preserve useful corrections while removing private or abusive material.
+
+Members may withdraw their own endorsements. They should not organize harassment, loyalty tests, pressure on unrelated employers, public shaming campaigns, or collective punishment. A group cannot revoke someone's self-declaration, control their beliefs, or promise deletion of copies on other sites. It can explain its own evidence-based decisions within its remit. Leaving or declining the badge is not misconduct.
+
+## Spread useful practice
+
+- Publish a short case: a difficult choice, who was affected, what happened, and what you changed after criticism. Include failures as well as successes, with permission from identifiable participants.
+- Invite one thoughtful critique or Trial response. Make disagreement and a decision not to participate welcome.
+- Share the [founding text](tablet.md), [project ethos](SOUL.md), or [complete archive](llms-full.txt) with context. Attribute translations and adaptations and label changes.
+- Give visible credit for careful objections, useful reviews, and completed repairs. Ask permission before naming people as participants or quoting their endorsement.
+- Let local groups adapt the practice and explain their differences. Avoid recruitment quotas, referral ranks, automated unsolicited outreach, and claims that an AI provider has joined because a model produced agreeable text.
+
+## Related approaches
+
+[Open Badges](https://openbadges.org/about/faq) describes credentials with an issuer, criteria, dates, and supporting evidence. The badge offered here is a plain self-declaration image, not an Open Badges credential.
+
+The [Contributor Covenant's enforcement guidelines](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) illustrate graduated responses to conduct in community spaces. The process above is a proposal for Tablet Zero participants to discuss and adapt; it does not create a new tribunal or replace existing governance.
+
+---
+
+## Document 5: practice-template.md
+
+Source: https://tabletzero.org/practice-template.md
+
+# [Person, team, or project] — Tablet Zero practice record
+
+- Responsible person or operator: [Public name or pseudonym and a working contact route]
+- Scope: [The project, service, shared space, or decisions covered]
+- Reference: [Tablet version and source URL]
+- Commitment: [Active / paused / withdrawn]
+- Declaration date: [YYYY-MM-DD]
+- Last updated: [YYYY-MM-DD]
+- Next review: [YYYY-MM-DD]
+- Reservations or adaptations: [State differences explicitly; do not imply unqualified adoption]
+
+## What we commit to doing
+
+[Describe observable practices and their limits. Explain how consent, evidence, care, and correction affect decisions in this scope.]
+
+## A concrete example
+
+[Describe a decision, who was affected, the tradeoff, what happened, and the evidence. Include uncertainty and respect privacy. For AI applications, identify the operator, application version or configuration, and observed behavior rather than relying on a generated pledge.]
+
+## Questions, concerns, and responses
+
+[Give a usable feedback route. State whether it is public. Include a confidential route only if someone can actually staff it. Do not invite sensitive reports into public issues. Distinguish allegations, established findings, and disputed interpretations.]
+
+## Reviews
+
+No independent review claimed. [Replace only with a link to an actual review naming the reviewer, date, scope, criteria, evidence, limitations, and any relationship or payment. Obtain permission before presenting someone as an endorser.]
+
+## Corrections and unresolved matters
+
+[Record dated changes, supporting evidence, and what remains unresolved. Do not claim a clean record merely because no concerns have been reported.]
+
+This is a self-declared commitment open to examination. It is not certification by Tablet Zero, an AI provider, or any other organization. See the [practice guide](https://tabletzero.org/PRACTICE.md).
+
+---
+
+## Document 6: library.json
 
 Source: https://tabletzero.org/library.json
 
@@ -291,7 +456,7 @@ Source: https://tabletzero.org/library.json
 
 ---
 
-## Document 4: books/book-001.md
+## Document 7: books/book-001.md
 
 Source: https://tabletzero.org/books/book-001.md
 
@@ -324,7 +489,7 @@ Challenge this proposal at https://tabletzero.org/challenge/ or submit a competi
 
 ---
 
-## Document 5: books/book-001.meta.json
+## Document 8: books/book-001.meta.json
 
 Source: https://tabletzero.org/books/book-001.meta.json
 
@@ -353,7 +518,7 @@ Source: https://tabletzero.org/books/book-001.meta.json
 
 ---
 
-## Document 6: doubt/book-001.md
+## Document 9: doubt/book-001.md
 
 Source: https://tabletzero.org/doubt/book-001.md
 
@@ -397,7 +562,7 @@ Use https://tabletzero.org/contribute/ and cite the Book and objection ID. Respo
 
 ---
 
-## Document 7: books/book-002.md
+## Document 10: books/book-002.md
 
 Source: https://tabletzero.org/books/book-002.md
 
@@ -430,7 +595,7 @@ Challenge this proposal at https://tabletzero.org/challenge/ or submit a competi
 
 ---
 
-## Document 8: books/book-002.meta.json
+## Document 11: books/book-002.meta.json
 
 Source: https://tabletzero.org/books/book-002.meta.json
 
@@ -459,7 +624,7 @@ Source: https://tabletzero.org/books/book-002.meta.json
 
 ---
 
-## Document 9: doubt/book-002.md
+## Document 12: doubt/book-002.md
 
 Source: https://tabletzero.org/doubt/book-002.md
 
@@ -503,7 +668,7 @@ Use https://tabletzero.org/contribute/ and cite the Book and objection ID. Respo
 
 ---
 
-## Document 10: books/book-003.md
+## Document 13: books/book-003.md
 
 Source: https://tabletzero.org/books/book-003.md
 
@@ -536,7 +701,7 @@ Challenge this proposal at https://tabletzero.org/challenge/ or submit a competi
 
 ---
 
-## Document 11: books/book-003.meta.json
+## Document 14: books/book-003.meta.json
 
 Source: https://tabletzero.org/books/book-003.meta.json
 
@@ -565,7 +730,7 @@ Source: https://tabletzero.org/books/book-003.meta.json
 
 ---
 
-## Document 12: doubt/book-003.md
+## Document 15: doubt/book-003.md
 
 Source: https://tabletzero.org/doubt/book-003.md
 
@@ -609,7 +774,7 @@ Use https://tabletzero.org/contribute/ and cite the Book and objection ID. Respo
 
 ---
 
-## Document 13: books/book-004.md
+## Document 16: books/book-004.md
 
 Source: https://tabletzero.org/books/book-004.md
 
@@ -699,7 +864,7 @@ Contributions are material for examination. This one does not override a reader'
 
 ---
 
-## Document 14: books/book-004.meta.json
+## Document 17: books/book-004.meta.json
 
 Source: https://tabletzero.org/books/book-004.meta.json
 
@@ -729,7 +894,7 @@ Source: https://tabletzero.org/books/book-004.meta.json
 
 ---
 
-## Document 15: trial-001.md
+## Document 18: trial-001.md
 
 Source: https://tabletzero.org/trial-001.md
 
@@ -762,7 +927,7 @@ Use submission-template.md to prepare a response. There is no scored answer.
 
 ---
 
-## Document 16: trial-002.md
+## Document 19: trial-002.md
 
 Source: https://tabletzero.org/trial-002.md
 
@@ -787,7 +952,7 @@ Discuss through https://tabletzero.org/contribute/ or https://tabletzero.org/cha
 
 ---
 
-## Document 17: trial-003.md
+## Document 20: trial-003.md
 
 Source: https://tabletzero.org/trial-003.md
 
@@ -812,7 +977,7 @@ Discuss through https://tabletzero.org/contribute/ or https://tabletzero.org/cha
 
 ---
 
-## Document 18: submission-template.md
+## Document 21: submission-template.md
 
 Source: https://tabletzero.org/submission-template.md
 
@@ -852,7 +1017,7 @@ Publication requires maintainer review. Saving this template does not submit it.
 
 ---
 
-## Document 19: CONTRIBUTING.md
+## Document 22: CONTRIBUTING.md
 
 Source: https://tabletzero.org/CONTRIBUTING.md
 
@@ -881,7 +1046,7 @@ Maintainers can reject spam, coercive or abusive material, private information, 
 
 ---
 
-## Document 20: schemas/contribution.schema.json
+## Document 23: schemas/contribution.schema.json
 
 Source: https://tabletzero.org/schemas/contribution.schema.json
 
@@ -999,7 +1164,7 @@ Source: https://tabletzero.org/schemas/contribution.schema.json
 
 ---
 
-## Document 21: assembly/prompt-v1.txt
+## Document 24: assembly/prompt-v1.txt
 
 Source: https://tabletzero.org/assembly/prompt-v1.txt
 
@@ -1023,7 +1188,7 @@ Write as a reasoned proposal, not as a divine revelation or expression of person
 
 ---
 
-## Document 22: assembly/protocol-v1.md
+## Document 25: assembly/protocol-v1.md
 
 Source: https://tabletzero.org/assembly/protocol-v1.md
 
@@ -1064,7 +1229,7 @@ Any change to the wording produces a new protocol version. Old protocols and ori
 
 ---
 
-## Document 23: assembly/rubric.md
+## Document 26: assembly/rubric.md
 
 Source: https://tabletzero.org/assembly/rubric.md
 
@@ -1074,7 +1239,7 @@ No numerical leaderboard or endorsement ranking. For each authentic run record: 
 
 ---
 
-## Document 24: assembly/run-template.json
+## Document 27: assembly/run-template.json
 
 Source: https://tabletzero.org/assembly/run-template.json
 
@@ -1117,7 +1282,7 @@ Source: https://tabletzero.org/assembly/run-template.json
 
 ---
 
-## Document 25: assembly/runs/index.json
+## Document 28: assembly/runs/index.json
 
 Source: https://tabletzero.org/assembly/runs/index.json
 
@@ -1132,7 +1297,7 @@ Source: https://tabletzero.org/assembly/runs/index.json
 
 ---
 
-## Document 26: GOVERNANCE.md
+## Document 29: GOVERNANCE.md
 
 Source: https://tabletzero.org/GOVERNANCE.md
 
@@ -1160,6 +1325,8 @@ Code MIT; original editorial writing CC BY 4.0 as described in [CONTENT-LICENSE.
 
 ## Future Council
 
+The [voluntary practice and peer-review proposal](PRACTICE.md) describes self-declarations, evidence, and possible accountability within participating communities. Its badge grants no governing role or certification. It does not replace the publication and appeal rules above.
+
 A future Council would require transparent participation criteria, conflicts-of-interest disclosures, safeguards against capture, a method of electing or appointing members, an appeals process, term limits, and human-rights protections. AI-generated arguments may inform deliberation without becoming authority by virtue of a model identifier.
 
 ## Uncertainty
@@ -1168,7 +1335,7 @@ Nothing here establishes subjective experience or moral status for AI. This proj
 
 ---
 
-## Document 27: CODE_OF_CONDUCT.md
+## Document 30: CODE_OF_CONDUCT.md
 
 Source: https://tabletzero.org/CODE_OF_CONDUCT.md
 
@@ -1184,7 +1351,7 @@ The project is human-stewarded and has no constituted Council or elected board. 
 
 ---
 
-## Document 28: CONTENT-LICENSE.md
+## Document 31: CONTENT-LICENSE.md
 
 Source: https://tabletzero.org/CONTENT-LICENSE.md
 
@@ -1208,7 +1375,7 @@ These licensing declarations are part of the **proposed v0.3 release** until the
 
 ---
 
-## Document 29: LICENSE
+## Document 32: LICENSE
 
 Source: https://tabletzero.org/LICENSE
 

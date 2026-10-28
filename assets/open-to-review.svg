@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="64" viewBox="0 0 320 64" role="img" aria-labelledby="title desc">
+  <title id="title">Tablet Zero — open to review, self-declared</title>
+  <desc id="desc">An optional self-declaration badge. Follow its accompanying link to the participant's practice record. This is not certification.</desc>
+  <rect x="1" y="1" width="318" height="62" rx="9" fill="#0f1211" stroke="#7d857d"/>
+  <circle cx="31" cy="32" r="16" fill="none" stroke="#ee8b56" stroke-width="2"/>
+  <path d="M19 48 44 16" stroke="#ee8b56" stroke-width="2"/>
+  <g font-family="Arial, sans-serif">
+    <text x="62" y="24" font-size="12" letter-spacing="1.4" fill="#bcc2b9">TABLET ZERO</text>
+    <text x="62" y="46" font-size="17" font-weight="bold" fill="#e6e9e2">Open to review</text>
+    <text x="205" y="46" font-size="12" fill="#bcc2b9">self-declared</text>
+  </g>
+</svg>

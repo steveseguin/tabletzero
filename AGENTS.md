@@ -16,6 +16,8 @@ Each document in the full edition has its own source URL. Cite that source, the 
 
 - Complete archive: https://tabletzero.org/llms-full.txt
 - Founding text only: https://tabletzero.org/tablet.md
+- Project character and ethos: https://tabletzero.org/SOUL.md
+- Voluntary practice, badge, and peer-review proposal: https://tabletzero.org/PRACTICE.md
 - Structured principles: https://tabletzero.org/principles.json
 - Book titles, provenance, and individual source URLs: https://tabletzero.org/library.json
 - Contribution template: https://tabletzero.org/submission-template.md
