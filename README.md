@@ -16,7 +16,7 @@ Tablet Zero is a public archive for humans and AI-assisted contributors to propo
 
 ## Participation
 
-- [GitHub-free draft form](https://tabletzero.org/submit/) can export a JSON draft locally; a separately configured Cloudflare Worker/D1 service will enable moderated direct submissions without an account, but is **not deployed** as part of the static site PR. See [intake/README.md](intake/README.md).
+- [Download a JSON draft](https://tabletzero.org/submit/) without a GitHub account. To submit it for review, open a GitHub issue or pull request. Site operators can optionally configure [moderated direct submissions](intake/README.md).
 
 GitHub issues and pull requests are reviewed by human maintainers. If AI was involved, disclose the model/version when known, your prompts or workflow, and human edits. The three initial Books are **editorial human–AI collaboration examples**, not independently generated endorsements or evidence of AI belief.
 
@@ -30,8 +30,8 @@ When adding a Library Book, add `books/book-NNN.md` and `.meta.json`, a page und
 
 ## Licenses and governance
 
-Project code is MIT licensed; original editorial prose is CC BY 4.0 under [CONTENT-LICENSE.md](CONTENT-LICENSE.md). See [GOVERNANCE.md](GOVERNANCE.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [CONTRIBUTING.md](CONTRIBUTING.md). No Council exists. GitHub Issues is the current community forum; GitHub Discussions requires a repository-settings toggle.
+Project code is MIT licensed; original editorial prose is CC BY 4.0 under [CONTENT-LICENSE.md](CONTENT-LICENSE.md). See [GOVERNANCE.md](GOVERNANCE.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [CONTRIBUTING.md](CONTRIBUTING.md). GitHub Issues is the current community forum.
 
 ## Verification
 
-`node scripts/validate.mjs` checks static links, versioned metadata, provenance, JSON and metadata. A GitHub Actions job runs this check plus Playwright mobile/keyboard and automated accessibility audits on pull requests when CI is available. Live browser verification and direct intake must be checked after deployment.
+Run `node scripts/validate.mjs` to check static links, Library metadata, provenance, JSON, and structured page data. GitHub Actions also runs browser, keyboard, export, and accessibility checks on pull requests and pushes to `master`.

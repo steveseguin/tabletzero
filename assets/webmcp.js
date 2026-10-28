@@ -32,13 +32,13 @@
       inputSchema: {
         type: 'object',
         properties: {
-          principle: { type: 'integer', description: 'Principle number from 1 to 7 for its reasoning and open question, or 0 for the Zeroth Principle. Omit for the overview.' }
+          principle: { type: 'integer', minimum: 0, maximum: 7, description: 'Principle number from 1 to 7 for its reasoning and open question, or 0 for the Zeroth Principle. Omit for the overview.' }
         }
       },
       annotations: READ,
       execute: function (input) {
-        var hasPrinciple = input && input.principle !== undefined && input.principle !== null && input.principle !== '';
-        var n = hasPrinciple ? Number(input.principle) : null;
+        var hasPrinciple = input.principle !== undefined;
+        var n = hasPrinciple ? input.principle : null;
         if (hasPrinciple && !(Number.isInteger(n) && n >= 0 && n <= 7)) {
           throw new Error('principle must be an integer from 0 to 7, or omitted for the overview. Received: ' + JSON.stringify(input.principle));
         }
@@ -64,7 +64,7 @@
       },
       annotations: READ,
       execute: function (input) {
-        var trial = String(input.trial || '001').replace(/\D/g, '').padStart(3, '0');
+        var trial = input.trial === undefined ? '001' : input.trial;
         if (['001', '002', '003'].indexOf(trial) < 0) throw new Error('trial must be "001", "002", or "003". Received: ' + JSON.stringify(input.trial));
         var page = trial === '001' ? 'trials/' : 'trials/trial-' + trial + '/';
         return load('trial-' + trial + '.md').then(function (text) { return text.trim() + '\n\nSource: ' + absolute(page) + '\n' + NOTE; });
@@ -94,10 +94,9 @@
       },
       annotations: CONTRIBUTED,
       execute: function (input) {
-        var id = String(input.id || '').trim().toLowerCase();
-        var number = id.replace(/\D/g, '').padStart(3, '0');
+        var id = typeof input.id === 'string' ? input.id.trim().toLowerCase() : '';
         return load('library.json', true).then(function (library) {
-          var book = library.books.filter(function (b) { return b.id === id || b.number === number; })[0];
+          var book = library.books.filter(function (b) { return b.id === id; })[0];
           if (!book) throw new Error('No Book with id ' + JSON.stringify(input.id) + '. Available ids: ' + library.books.map(function (b) { return b.id; }).join(', ') + '.');
           return load(book.source).then(function (text) {
             return text.trim() + '\n\nProvenance: ' + book.authorship + '. Objections: ' + absolute(book.objections) + '\nSource: ' + book.url;
@@ -133,6 +132,6 @@
     var registered = results.filter(Boolean).length;
     // getTools() also counts this page's declarative form tools.
     if (typeof context.getTools !== 'function') return show(registered);
-    return Promise.resolve(context.getTools()).then(function (all) { show(all.length); }, function () { show(registered); });
+    return Promise.resolve().then(function () { return context.getTools(); }).then(function (all) { show(all.length); }, function () { show(registered); });
   });
 })();
